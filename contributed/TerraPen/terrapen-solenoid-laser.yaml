@@ -39,8 +39,8 @@ axes:
         microsteps: 16
         stallguard: 16
         stallguard_debug: false
-        run_mode: CoolStep
-        homing_mode: CoolStep
+        run_mode: StealthChop
+        homing_mode: StealthChop
         use_enable: false
         r_sense_ohms: 0.110
         cs_pin: gpio.17
@@ -72,8 +72,8 @@ axes:
         microsteps: 16
         stallguard: 16
         stallguard_debug: false
-        run_mode: CoolStep
-        homing_mode: CoolStep
+        run_mode: StealthChop
+        homing_mode: StealthChop
         use_enable: false
         r_sense_ohms: 0.110
         cs_pin: gpio.16
