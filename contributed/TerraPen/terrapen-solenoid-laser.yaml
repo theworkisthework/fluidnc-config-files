@@ -85,7 +85,6 @@ axes:
     acceleration_mm_per_sec2: 20000.000
     max_travel_mm: 24.000
     soft_limits: false
-    hard_limits: false
     homing:
       cycle: 1
       mpos_mm: 12.000

@@ -86,7 +86,6 @@ axes:
     max_travel_mm: 24.000
     # KPOWER DMC809 - calculated ~180deg circumference travel = 37mm is more like 24mm linear
     soft_limits: false
-    hard_limits: false
     homing:
       cycle: 1
       mpos_mm: 12.000
