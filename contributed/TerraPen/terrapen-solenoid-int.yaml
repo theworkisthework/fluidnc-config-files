@@ -131,7 +131,7 @@ probe:
   check_mode_start: false
 
 macros:
-  startup_line0: M67E0Q40
+  startup_line0: G0Z1F1000
   startup_line1:
   macro0:
   macro1:
