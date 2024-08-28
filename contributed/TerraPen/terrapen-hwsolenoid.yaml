@@ -100,9 +100,9 @@ axes:
       # instead of a spindle. This way, we can use Z commands to activate the solenoid.
       # Note: This only works with the modified version of FluidNC. It should not be used with
       # the FET driver board. Use with FET driver board may cause ireperable damage.
-      hwsolenoid:
-        output_pin: gpio.27
-        direction_invert: true
+    hwsolenoid:
+      output_pin: gpio.27
+      direction_invert: true
 
     motor1:
       null_motor:

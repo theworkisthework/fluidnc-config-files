@@ -98,10 +98,9 @@ axes:
     motor0:
       rc_servo:
         pwm_hz: 50
-        # KPOWER is glitchy at 50Hz (makes no odds when part of config)
         output_pin: gpio.27
-        min_pulse_us: 750
-        max_pulse_us: 2500
+        min_pulse_us: 1000
+        max_pulse_us: 2000
     motor1:
       null_motor:
 
