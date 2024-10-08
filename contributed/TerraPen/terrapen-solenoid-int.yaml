@@ -25,7 +25,7 @@ axes:
       positive_direction: true
       settle_ms: 250.000
       seek_mm_per_min: 2000.000
-      feed_mm_per_min: 200.000
+      feed_mm_per_min: 500.000
       seek_scaler: 1.100
       feed_scaler: 5.000
     motor0:
@@ -48,8 +48,8 @@ axes:
       null_motor:
   y:
     steps_per_mm: 80.000
-    max_rate_mm_per_min: 2500.000
-    acceleration_mm_per_sec2: 750.000
+    max_rate_mm_per_min: 2000.000
+    acceleration_mm_per_sec2: 500.000
     max_travel_mm: 300.000
     soft_limits: false
     homing:
