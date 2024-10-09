@@ -29,7 +29,7 @@ axes:
       seek_scaler: 1.100
       feed_scaler: 5.000
     motor0:
-      limit_all_pin: gpio.34:low
+      # limit_all_pin: gpio.34:low
       hard_limits: false
       tmc_2130:
         direction_pin: gpio.26:low
@@ -62,7 +62,7 @@ axes:
       seek_scaler: 1.100
       feed_scaler: 5.000
     motor0:
-      limit_all_pin: gpio.35
+      # limit_all_pin: gpio.35
       hard_limits: false
       tmc_2130:
         direction_pin: gpio.33:low
@@ -131,7 +131,7 @@ probe:
   check_mode_start: false
 
 macros:
-  startup_line0: M67E0Q40
+  startup_line0: G0Z1F1000
   startup_line1:
   macro0:
   macro1:
