@@ -151,7 +151,6 @@ start:
 # TMC2209 UART config mode
 uart1:
   txd_pin: gpio.19
-  rxd_pin: no_pin
   baud: 115200
   mode: 8N1
 
