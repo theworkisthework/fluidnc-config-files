@@ -73,7 +73,7 @@ axes:
       hard_limits: false
       tmc_2209:
         uart_num: 1
-        addr: 1
+        addr: 2
         r_sense_ohms: 0.110
         use_enable: false
         direction_pin: gpio.33:low
