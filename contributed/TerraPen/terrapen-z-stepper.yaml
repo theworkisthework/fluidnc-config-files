@@ -1,0 +1,169 @@
+name: ESP32_Plotter_Controller_RevB_Emerald_Dingo
+board: Emerald Dingo (RevB)
+kinematics: {}
+stepping:
+  engine: RMT
+  idle_ms: 255
+  dir_delay_us: 1
+  pulse_us: 3
+  disable_delay_us: 0
+axes:
+  shared_stepper_disable_pin: gpio.2
+  x:
+    steps_per_mm: 80
+    max_rate_mm_per_min: 6000
+    acceleration_mm_per_sec2: 500
+    max_travel_mm: 300
+    soft_limits: false
+    homing:
+      cycle: 2
+      mpos_mm: 0
+      positive_direction: false
+      settle_ms: 250
+      seek_mm_per_min: 800
+      feed_mm_per_min: 200
+      seek_scaler: 5
+      feed_scaler: 5
+    motor0:
+      limit_neg_pin: gpio.34
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      tmc_2130:
+        direction_pin: gpio.26:high
+        step_pin: gpio.25
+        cs_pin: gpio.17
+        r_sense_ohms: 0.11
+        run_amps: 0.5
+        hold_amps: 0.125
+        microsteps: 16
+        stallguard: 13
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+        spi_index: -1
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+  y:
+    steps_per_mm: 80
+    max_rate_mm_per_min: 6000
+    acceleration_mm_per_sec2: 500
+    max_travel_mm: 300
+    soft_limits: false
+    homing:
+      cycle: 2
+      mpos_mm: 0
+      positive_direction: false
+      settle_ms: 250
+      seek_mm_per_min: 800
+      feed_mm_per_min: 200
+      seek_scaler: 5
+      feed_scaler: 5
+    motor0:
+      limit_neg_pin: gpio.35
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      tmc_2130:
+        direction_pin: gpio.33:high
+        step_pin: gpio.32
+        cs_pin: gpio.16
+        r_sense_ohms: 0.11
+        run_amps: 0.5
+        hold_amps: 0.125
+        microsteps: 16
+        stallguard: 13
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+        spi_index: -1
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+  z:
+    steps_per_mm: 200
+    max_rate_mm_per_min: 31000
+    acceleration_mm_per_sec2: 20000
+    max_travel_mm: 24
+    soft_limits: false
+    homing:
+      cycle: 0
+      mpos_mm: 12
+      positive_direction: true
+      settle_ms: 250
+      seek_mm_per_min: 2000
+      feed_mm_per_min: 200
+      seek_scaler: 1.1
+      feed_scaler: 5
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      tmc_2130:
+        direction_pin: gpio.21
+        step_pin: gpio.22
+        cs_pin: gpio.4
+        r_sense_ohms: 0.11
+        run_amps: 0.5
+        hold_amps: 0.125
+        microsteps: 16
+        stallguard: 13
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+        spi_index: -1
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+sdcard:
+  cs_pin: gpio.5
+  card_detect_pin: NO_PIN
+control:
+  reset_pin: gpio.0:pu:low
+  safety_door_pin: NO_PIN
+  feed_hold_pin: NO_PIN
+  cycle_start_pin: NO_PIN
+  macro0_pin: NO_PIN
+  macro1_pin: NO_PIN
+  macro2_pin: NO_PIN
+  macro3_pin: NO_PIN
+  fault_pin: NO_PIN
+  estop_pin: NO_PIN
+coolant:
+  delay_ms: 1000
+probe:
+  check_mode_start: false
+  pin: NO_PIN
+  toolsetter_pin: NO_PIN
+macros: {}
+start:
+  must_home: false
+  check_limits: true
+  deactivate_parking: false
+
+arc_tolerance_mm: 0.002
+junction_deviation_mm: 0.01
+verbose_errors: false
+report_inches: false
+enable_parking_override_control: false
+use_line_numbers: false
