@@ -19,7 +19,7 @@ axes:
     soft_limits: false
     homing:
       cycle: 2
-      mpos_mm: 0
+      mpos_mm: -4
       positive_direction: false
       settle_ms: 250
       seek_mm_per_min: 800
@@ -59,7 +59,7 @@ axes:
     soft_limits: false
     homing:
       cycle: 2
-      mpos_mm: 0
+      mpos_mm: -7.6
       positive_direction: false
       settle_ms: 250
       seek_mm_per_min: 800
@@ -93,8 +93,8 @@ axes:
       limit_all_pin: NO_PIN
   z:
     steps_per_mm: 69.77
-    max_rate_mm_per_min: 3200
-    acceleration_mm_per_sec2: 3200
+    max_rate_mm_per_min: 6000
+    acceleration_mm_per_sec2: 8000
     max_travel_mm: 24
     soft_limits: false
     homing:
@@ -116,7 +116,7 @@ axes:
         step_pin: gpio.22
         cs_pin: gpio.4
         r_sense_ohms: 0.11
-        run_amps: 0.35
+        run_amps: 0.5
         hold_amps: 0.125
         microsteps: 16
         stallguard: 13
@@ -155,7 +155,8 @@ probe:
   check_mode_start: false
   pin: NO_PIN
   toolsetter_pin: NO_PIN
-macros: {}
+macros:
+  after_homing: G0 X0 Y0
 start:
   must_home: false
   check_limits: true
